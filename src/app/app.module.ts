@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 //Rutas
  import { AppRoutingModule } from './app-routing.module';
@@ -21,10 +22,12 @@ import { ItemComponent } from './pages/item/item.component';
     PortafolioComponent,
     AboutComponent,
     ItemComponent
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [
     // appRoutingProviders
